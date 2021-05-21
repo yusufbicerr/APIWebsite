@@ -1,0 +1,330 @@
+*{    
+    font-family:'Poppins', sans-serif;   
+    box-sizing: border-box;
+}
+body{
+    background-color: #999797;
+}
+.hakkinda-section{
+    padding-top: 20px;
+    width: 76.8%;
+    margin: auto;
+    min-height: 120vh;
+    background-color: #e2dfdfcb;
+}
+.hakkinda-container{   
+    width: 90%;
+    display: block;
+    margin: auto;
+       
+}
+.hakkinda-icerik{
+    margin-top: 15px;
+    float: left;
+    width: 60%;
+}
+.hakkinda-resim{
+    width: 30%;
+    margin: auto;
+    float: right;
+}
+.hakkinda-resim img{
+    width: 100%;
+    height: auto;
+    
+}
+.hakkinda-section .hakkinda-title{
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+}
+.hakkinda-icerik p{
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.hobilerim-container{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 30%;
+}
+.hobilerim-icerik{
+    margin-top: 15px;
+    float: left;
+    width: 55%;
+}
+.hobilerim-resim{   
+    width: 45%;
+    float: left;
+}
+.hobilerim-resim img{
+    width: 100%;
+    height: auto;
+}
+.hakkinda-section .hobilerim-title{   
+    margin-top: 120px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black; 
+    width: 55%;   
+}
+.hobilerim-icerik li{
+    font-family: sans-serif;
+    font-size: 25px;
+    line-height: 2;
+}
+.cv-container{
+    width: 80.9%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #e2dfdfcb;
+}
+.cv-resim{
+    margin: auto;
+}
+.cv-icerik h2{
+    padding-top: 3%;
+}
+.cv-icerik img{
+    width: 100%;
+}
+.cv-icerik li{
+    font-family: sans-serif;
+    font-size: 25px;
+    line-height: 2;
+}
+footer{
+    background: black;
+    width: 76.8%;
+    margin: auto;
+    height: 10%;
+}
+footer .footer-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .ftr-icerik li{
+    list-style: none;
+}
+footer .ftr-icerik a{
+    text-decoration: none;
+    color: white;
+}
+footer .ftr-icerik a:hover{
+    color: rgb(164, 177, 171);
+}
+.footer-disi{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+
+}
+.slider-container{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.carousel-item{
+    width: 76.8%;
+    margin: auto 11.6%;
+}
+.carousel-item img{
+    height: 450px;
+    margin: auto;
+}
+.carousel-item li{
+    list-style: none;
+}
+.sehrim-container{
+    width: 80.9%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #e2dfdfcb;
+}
+.ayrac{
+   
+    border-top: 3px  solid;
+    color: black;
+    max-width: 250px;
+    margin: 25px auto;
+}
+.sehrim-container h2{
+    font-size: 35px;
+}
+.sehrim-container p{
+    font-size: 24px;
+}
+.mirasimiz-container{
+    width: 80.9%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #e2dfdfcb;
+}
+.mirasimiz-resim{
+    margin: auto;
+}
+.muze-resim{    
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-right: 5px;
+}
+.muze-resim img{
+    width: 100%;
+    
+}
+.mrs-icerik h2{
+    padding-top: 3%;
+}
+.iletisim-container{
+    position: absolute;
+    margin-top: 340px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 100%;
+    background: rgb(234, 245, 248);
+    padding: 25px;
+    border-radius: 4px;
+
+}
+.iletisim-container h2{
+    text-align: center;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+}
+.iletisim-container .input-eleman{
+    margin-bottom: 5%;
+}
+
+.iletisim-container .input-dgun{
+    margin-bottom: 8%;
+}
+.iletisim-container .input-dgun input[type="date"]{
+    width: 100%;
+}
+.iletisim-container .input-eleman input[type="text"],
+.iletisim-container textarea{
+    width: 100%;
+    border: 1px solid #cacaca;
+}
+.iletisim-container textarea{
+    height: 100px;
+    
+}
+.iletisim-container .iletisim-button input[type="submit"]{
+    border: 0;
+    margin-top: 5%;
+    padding: 3%;
+    width: 40%;
+    float: right;
+    background: #165399b0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.iletisim-container .iletisim-button-2 input[type="reset"]{
+    border: 0;
+    margin-top: 5%;
+    padding: 3%;
+    width: 40%;
+    float: left;
+    background: #165399b0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#error_message{
+    width: 60%;
+    padding: 0px;
+    margin: auto;
+    background: #fd5c62;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+.iletisim-footer{
+    background: black;
+    width: 76.8%;
+    margin: auto;
+    height: 10%;
+    margin-top: 673px;
+}
+.footer-container-iletisim{
+    
+    width: 100%;
+    max-width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.iletisim-bilgiler-container{
+
+    margin: 200px auto;
+    width: 60%;
+    background: rgb(234, 245, 248);
+    padding: 60px;
+    border-radius: 4px;
+
+}
+.iletisim-bilgiler-footer{
+    background: black;
+    width: 76.8%;
+    margin: auto;
+    height: 10%;
+}
+@media (max-width:768px){
+    .hakkinda-section{         
+        max-height: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }        
+    .icerik-kismi-hak{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }      
+    .hakkinda-resim{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .icerik-kismi-hobi{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .hobilerim-resim{
+        
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+}
+
