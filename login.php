@@ -43,6 +43,24 @@
     </div>
    </div>
 
+   <div class="iletisim-container">
+          <h2>LOGIN</h2>
+        
+          <form action="Controllogin.php" id="iletisim-form">
+                <div class="input-eleman">
+                  <label>Kullanıcı Adı</label>  
+                  <input type="text" name = "kullaniciadi" placeholder = "b201210042@sakarya.edu.tr" required = "required"> 
+                </div>
+                <br>
+                <div class="input-eleman">
+                  <label>Şifre</label>  
+                  <input type="password" name = "password" placeholder = "b201210042" required = "required"> 
+                <div class="iletisim-button">
+                  <input type="submit"> 
+                </div>       
+          </form>          
+      </div>
+
 
    <footer class="iletisim-footer">
     <div class="footer-container-iletisim ">
