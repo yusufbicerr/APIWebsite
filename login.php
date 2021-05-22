@@ -43,26 +43,35 @@
     </div>
    </div>
 
-   <div class="iletisim-container">
-          <h2>LOGIN</h2>
-        
-          <form action="Controllogin.php" id="iletisim-form">
-                <div class="input-eleman">
-                  <label>Kullanıcı Adı</label>  
-                  <input type="text" name = "kullaniciadi" placeholder = "b201210042@sakarya.edu.tr" required = "required"> 
-                </div>
-                <br>
-                <div class="input-eleman">
-                  <label>Şifre</label>  
-                  <input type="password" name = "password" placeholder = "b201210042" required = "required"> 
-                <div class="iletisim-button">
-                  <input type="submit"> 
-                </div>       
-          </form>          
-      </div>
+    <header>
+
+			<div>
+					<h1 class="display-4 font-italic text-center" style="margin-top:5%;">
+						LOGIN
+					</h1>
+	    	</div>
+	</header>
+    <main>
+       <div class="login-container">
+            
+              <form action="Controllogin.php" method="POST">
+                    <div class="input-eleman">
+                      <label>Kullanıcı Adı</label>  
+                      <input type="text" name = "kullaniciadi" class="form-control" placeholder = "b201210042@sakarya.edu.tr" required = "required"> 
+                    </div>
+                    <br>
+                    <div class="input-eleman">
+                      <label>Şifre</label>  
+                      <input type="password" name = "password" class="form-control" placeholder = "b201210042" required = "required"> 
+                    <div class="iletisim-button text-center">
+                      <input type="submit"> 
+                    </div>       
+              </form>          
+        </div>
+    </main>
 
 
-   <footer class="iletisim-footer">
+   <footer class="login-footer">
     <div class="footer-container-iletisim ">
         <div class="ftr">
             <ul class="ftr-icerik">
