@@ -45,3 +45,4 @@ function bilgiler()
     var dgun1 = document.getElementsByName("dgun1").value;
     var message1 = document.getElementsByName("message1").value;
 }
+

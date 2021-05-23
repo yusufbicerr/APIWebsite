@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
   <link rel="stylesheet" href="_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
+  
 
   <title>Sayfam</title>
 
@@ -42,7 +42,30 @@
       </div> 
     </div>
    </div>
-   <footer>
+
+    
+    <div class="ilgi-container">
+      <div class="app">
+        <div class="ilgi-header">
+            <h1>Güncel Hava Durumu</h1>
+        </div>
+      </div>
+      <div class="ilgi-icerik">
+        <h2><span id="konum"></span></h2>
+        <h4 id="durum" style="font-style: italic; text-transform:capitalize;"></h4>
+        <h2><span id="temp"></span><sup>o</sup>C</h4>
+      </div>
+    </div>
+
+    <div class="ilgialan-container">
+        <li>BattleBots izlemek</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/06lyUXuQT_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <li>Astronomi</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fRegfA7cJzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+   
+    <footer>
     <div class="footer-container">
         <div class="ftr">
             <ul class="ftr-icerik">
@@ -60,4 +83,22 @@
     </div>
  </footer>
 </body>
+<script type="text/javascript">  
+    link = "https://api.openweathermap.org/data/2.5/weather?q=Istanbul&appid=3e4a3f6a1769940da684772cc060ab07&lang=tr";
+    var request = new XMLHttpRequest();
+    request.open('GET',link,true);
+    request.onload = function(){
+      var obj = JSON.parse(this.response);
+      console.log(obj);
+      document.getElementById('durum').innerHTML = obj.weather[0].description;
+      document.getElementById('konum').innerHTML = obj.name;
+      document.getElementById('temp').innerHTML = Math.round(obj.main.temp -273.15);
+      
+
+    }
+    if(request.status==200){
+      console.log("ERROR");
+    }
+    request.send();
+</script>
 </html>
